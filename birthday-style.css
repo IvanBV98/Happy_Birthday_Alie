@@ -20,8 +20,15 @@
                 margin-top: 50px;
             }
             /* Container */
-                .container {
+                .container, .date {
                     justify-content: space-around;
+                }
+                .date {
+                    width: 700px;
+                    margin-top: 100px;
+                }
+                .datebox {
+                    justify-content: center;
                 }
                 .stickers {
                     width: 60px;
