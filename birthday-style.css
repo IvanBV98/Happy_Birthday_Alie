@@ -1,0 +1,98 @@
+/* Настройки */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .d-flex {
+        display: flex;
+    }
+    /* @font-face {
+        font-family: 'Hand-Letters';
+        src: url(../704/english-157-bt_[allfont.ru].ttf);
+    } */
+    /* Body */
+        body {
+            background: lawngreen;
+        }
+        /* Header */
+            .header {
+                margin: 6px;
+                margin-top: 50px;
+            }
+            /* Container */
+                .container {
+                    justify-content: space-around;
+                }
+                .stickers {
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .sticker_1 {
+                    background: yellow;
+                    transform: rotate(-10deg);
+                }
+                .sticker_2 {
+                    background: red;
+                    transform: rotate(10deg);
+                }
+                .sticker_3 {
+                    background: pink;
+                    transform: rotate(-10deg);
+                }
+                .sticker_4 {
+                    background: green;
+                    transform: rotate(10deg);
+                }
+                .sticker_5 {
+                    background: blue;
+                    transform: rotate(-10deg);
+                }
+                .sticker_6 {
+                    background: violet;
+                    transform: rotate(10deg);
+                }
+                .sticker_7 {
+                    background: indigo;
+                    transform: rotate(-10deg);
+                }
+                .txt {
+                    color: white;
+                    font-family: Gabriola;
+                    font-size: 50px;
+                }
+/* main */
+    /* keyword */
+        .main {
+            margin-top: 100px;   
+        }
+        .container {
+            justify-content: space-around;
+        }
+        .keywordsName {
+            width: 660px;
+            height: 690px;
+        }
+        .row {
+            height: 30px;
+        }
+        .letter {
+            width: 29px;
+            height: 29px;
+            border: 1px solid transparent;
+            margin: -0.5px;
+        }
+        .lettera {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        .txtkw {
+            font-size: 25px;
+        }
+        .span {
+            color: red;
+        }
