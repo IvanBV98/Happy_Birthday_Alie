@@ -122,6 +122,7 @@
                 position: relative;
                 width: 50px; 
                 height: 40px;
+                z-index: 2;
                 /* overflow: hidden; */
             }
             .dbutton:before, .dbutton:after {
@@ -141,17 +142,10 @@
                 transform: rotate(45deg); 
                 transform-origin: 100% 100%;
             }
-            .beforeButton {
+            .past {
                 position: absolute;
                 top: 50%;
                 left: 0px;
-            }
-            .past {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
             }
             /* slider */
                 .slider {
