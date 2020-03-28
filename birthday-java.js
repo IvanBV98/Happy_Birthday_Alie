@@ -10,6 +10,7 @@ button = document.addEventListener('click', function() {
     else {
         a = 0;
     }
+    return(a);
 });
 function otmena(e) {
     let evt = e ? e : window.event;
