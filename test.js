@@ -1,2 +1,2 @@
-let slide = document.querySelectorAll('.image'),
-currentSlide = 0;
+// let slide = document.querySelectorAll('.image'),
+// currentSlide = 0;
