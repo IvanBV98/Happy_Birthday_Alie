@@ -123,6 +123,7 @@
                 width: 50px; 
                 height: 40px;
                 z-index: 2;
+                top: 50%;
                 /* overflow: hidden; */
             }
             .dbutton:before, .dbutton:after {
@@ -144,8 +145,11 @@
             }
             .past {
                 position: absolute;
-                top: 50%;
                 left: 0px;
+            }
+            .next {
+                position: absolute;
+                right: 0px;
             }
             /* slider */
                 .slider {

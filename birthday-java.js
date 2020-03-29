@@ -2,15 +2,21 @@
 // console.log(window.innerHeight);
 // Слайдер
 let button = document.querySelector('.dbutton'),
-past = document.querySelector('.past'),
+next = document.querySelector('.next'),
 a = 0,
+i = 1,
+k,
 e;
+
 button = document.addEventListener('click', function() {
     otmena(e);
-    return(a);
 });
 past = document.addEventListener('click', function() {
-    a = a + 1;
+    if(i != 1) {
+        for (j = 1; j <= 0; j = j - 0.1) {
+
+        }
+    }
 });
 function otmena(e) {
     let evt = e ? e : window.event;
