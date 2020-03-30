@@ -2,9 +2,9 @@ let past = document.querySelector('.past'),
     next = document.querySelector('.next'),
     currentSlide = 0,
     image = document.querySelector('.next'),
-    imageClasses = image[i].classList,
     i = 0,
     e;
+var imageClasses = image.classList;
 for (i = 0; i <= 54; i++) {
     image[i] = document.querySelector('.image'+i);
 }
@@ -27,8 +27,9 @@ let after = next.addEventListener('click', function () {
 })
 
 function pastSlide() {
-    image[i].classList.remove = 'active';
+    console.log(image.classList)
+    image[i].classList.toggle("active");
     if (i > 0) i = i - 1;
     else i = 54;
-    image[i].classList.add = 'active';
+    image[i].classList.toggle("active");
 }
