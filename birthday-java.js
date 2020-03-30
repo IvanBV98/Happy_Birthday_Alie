@@ -11,7 +11,7 @@ e;
 button = document.addEventListener('click', function() {
     otmena(e);
 });
-past = document.addEventListener('click', function() {
+next = document.addEventListener('click', function() {
     if(i != 1) {
         for (j = 1; j <= 0; j = j - 0.1) {
 
