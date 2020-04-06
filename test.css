@@ -1,91 +1,466 @@
+/* Настройки */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* Body */
+
 body {
     background: lawngreen;
+    position: relative;
+}
+
+.fody {
+    width: 1440px;
+}
+
+/* Header */
+
+header {
+    margin: 6px;
+    margin-top: 50px;
+}
+
+/* Container */
+
+.container, .date {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.date {
+    width: 700px;
+    margin-top: 100px;
+}
+
+.datebox {
+    justify-content: center;
+}
+
+.stickers {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticker_1 {
+    background: yellow;
+    transform: rotate(-10deg);
+}
+
+.sticker_2 {
+    background: red;
+    transform: rotate(10deg);
+}
+
+.sticker_3 {
+    background: pink;
+    transform: rotate(-10deg);
+}
+
+.sticker_4 {
+    background: green;
+    transform: rotate(10deg);
+}
+
+.sticker_5 {
+    background: blue;
+    transform: rotate(-10deg);
+}
+
+.sticker_6 {
+    background: violet;
+    transform: rotate(10deg);
+}
+
+.sticker_7 {
+    background: indigo;
+    transform: rotate(-10deg);
+}
+
+.txt, .header {
+    color: white;
+    font-family: Gabriola;
+    font-size: 50px;
+}
+
+/* main */
+
+main {
+    margin-top: 100px;
+}
+
+/* item-left */
+
+.item-left {
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+/* keyword */
+
+.keywordsName {
+    width: 660px;
+    height: 690px;
+}
+
+.row {
+    height: 30px;
+}
+
+.letter {
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    margin: -0.5px;
+}
+
+.lettera {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
-    width: 1000px;
-    height: 200px;
+    align-items: center;
+    border: 1px solid black;
+    background: lawngreen;
 }
+
+.txtkw {
+    font-size: 25px;
+}
+
+.span {
+    color: red;
+}
+
+.text {
+    text-align: center;
+}
+
 /* item-right */
+
 .item-right {
     justify-content: center;
     position: relative;
 }
+
 .dbutton {
+    position: absolute;
+    top: 50%;
     z-index: 2;
 }
+
 .bbutton {
     position: relative;
     width: 50px;
     height: 40px;
+    z-index: 2;
+    top: 50%;
 }
+
 .bbutton:before, .bbutton:after {
     content: "";
-    position: absolute; 
-    left: 25px; 
+    position: absolute;
+    left: 25px;
     top: 0;
-    width: 25px; 
+    width: 25px;
     height: 40px;
     background: red;
     border-radius: 25px 25px 0 0;
-    transform: rotate(-45deg); 
+    transform: rotate(-45deg);
     transform-origin: 0 100%;
     z-index: -1;
 }
+
 .bbutton:after {
     left: 0;
-    transform: rotate(45deg); 
+    transform: rotate(45deg);
     transform-origin: 100% 100%;
 }
+
+.past {
+    position: absolute;
+    left: 0px;
+}
+
+.next {
+    position: absolute;
+    right: 0px;
+}
+
 .fas {
     color: white;
     font-size: 25px;
 }
+
 .fa-reply-all {
     position: absolute;
     left: 7.5px;
     top: 5px;
 }
+
 .fa-share-all {
     position: absolute;
     right: 7.5px;
     top: 5px;
 }
-.past {
-    position: absolute;
-    left: 0px;
-}
-.next {
-    position: absolute;
-    right: 0px;
-}
-.lefttr {
-    width: 0; 
-    height: 0;
-    border-top: 10px solid transparent;
-    border-right: 20px solid white;
-    border-bottom: 10px solid transparent;
-}
+
 /* slider */
-    .slider {
-        width:600px;
-        position: relative;
-        left: 75px;
-    }
-    .image {
-        width:600px;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
+
+.slider {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image {
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+img {
+    width: 75%;
+}
+
+/* footer */
+
+footer {
+    margin-top: 25px;
+}
+
+.header {
+    text-align: center;
+}
+
+/* container */
+
+.f-container {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rhyme {
+    list-style: none;
+    margin-top: 5px;
+    height: 30px;
+}
+
+.rhymes {
+    text-align: justify;
+    font-size: 30px;
+}
+
+/* Шарики */
+
+.balloons {
+    position: absolute;
+    z-index: -5;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    animation: totop 5s infinite;
+}
+
+.balloons0 {
+    background: silver;
+    left: 50%;
+    animation-delay: 0s;
+}
+
+.balloons1 {
+    background: red;
+    left: 40%;
+    animation-delay: 0.25s;
+}
+
+.balloons2 {
+    background: yellow;
+    left: 60%;
+    animation-delay: 0.5s;
+}
+
+.balloons3 {
+    background: green;
+    left: 30%;
+    animation-delay: 0.75s;
+}
+
+.balloons4 {
+    background: blue;
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.balloons5 {
+    background: orange;
+    left: 20%;
+    animation-delay: 1.25s;
+}
+
+.balloons6 {
+    background: royalblue;
+    left: 80%;
+    animation-delay: 1.5s;
+}
+
+.balloons7 {
+    background: indigo;
+    left: 10%;
+    animation-delay: 1.75s;
+}
+
+.balloons8 {
+    background: hotpink;
+    left: 90%;
+    animation-delay: 2s;
+}
+
+.balloons9 {
+    background: cyan;
+    left: 0;
+    animation-delay: 2.25s;
+}
+
+.balloons10 {
+    background: tomato;
+    left: 50%;
+    animation-delay: 2.5s;
+}
+
+.balloons11 {
+    background: purple;
+    left: 40%;
+    animation-delay: 2.75s;
+}
+
+.balloons12 {
+    background: indianred;
+    left: 60%;
+    animation-delay: 3s;
+}
+
+.balloons13 {
+    background: gold;
+    left: 30%;
+    animation-delay: 3.25s;
+}
+
+.balloons14 {
+    background: cornflowerblue;
+    left: 70%;
+    animation-delay: 3.5s;
+}
+
+.balloons15 {
+    background: teal;
+    left: 20%;
+    animation-delay: 3.75s;
+}
+
+.balloons16 {
+    background: slateblue;
+    left: 80%;
+    animation-delay: 4s;
+}
+
+.balloons17 {
+    background: darkorange;
+    left: 10%;
+    animation-delay: 4.25s;
+}
+
+.balloons18 {
+    background: turquoise;
+    left: 90%;
+    animation-delay: 3.5s;
+}
+
+.balloons19 {
+    background: navajowhite;
+    left: 0%;
+    animation-delay: 4.5s;
+}
+
+.balloons20 {
+    background: fuchsia;
+    left: 100%;
+    animation-delay: 4.5s;
+}
+
+/* media */
+
+@media(min-width: 1442px) {
+    .fody {
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        left: 15%;
     }
-    .active {
-        opacity: 1 !important;
+}
+
+@media(max-width: 1441px) {
+    body {
+        justify-content: center;
+        display: flex;
     }
-    img {
-        width: 75%;
+    .fody {
+        width: 100%;
     }
+}
+
+@media(max-width: 1365px) {
+    .stickers {
+        width: 45px;
+        height: 45px;
+    }
+    .txt {
+        font-size: 40px;
+    }
+    .txtkw {
+        font-size: 22.5px;
+    }
+    .row {
+        font-size: 22.5px;
+    }
+    .letter {
+        width: 22.5px;
+        height: 22.5px;
+        border: 1px solid transparent;
+        margin: -1px;
+    }
+    .lettera{
+        border-color: black;
+    }
+    .txtkw {
+        font-size: 20px;
+    }
+}
+
+/* keyframes */
+
+@keyframes totop {
+    0% {
+        /* bottom: 0%; */
+        bottom: 0%;
+    }
+    100% {
+        /* bottom: 100%; */
+        bottom: 125%;
+    }
+}
