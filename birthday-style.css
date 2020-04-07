@@ -19,6 +19,12 @@
     z-index: 100;
 }
 
+
+@font-face{
+    font-family: 'Gabriola';
+    src: url(../happy-birthday/fonts/Gabriola.ttf);
+ }
+
 /* Body */
 
 body {
@@ -100,7 +106,7 @@ header .container {
 
 .txt, .header {
     color: white;
-    font-family: Gabriola;
+    font-family: 'Gabriola';
     font-size: 50px;
 }
 
