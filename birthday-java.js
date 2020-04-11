@@ -5,7 +5,7 @@
 
 let security = document.querySelector('.security');
 login = prompt('Введите логин');
-while (login != 'Alie704') {
+while (login != 'Alie1234') {
     alert('Доступ запрещён');
     security.style.display = 'block';
     login = prompt('Введите логин');
